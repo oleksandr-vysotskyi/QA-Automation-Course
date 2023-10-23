@@ -46,7 +46,7 @@ console.log(divider(3, 2)); // виведе у консоль false
 перевищує за значенням число 10 */
 function recursiveAddition(value)  {
     if (value <= 10) {
-       console.log(value); // 
+       console.log(value); 
        recursiveAddition(value + 2);
    } 
  }
