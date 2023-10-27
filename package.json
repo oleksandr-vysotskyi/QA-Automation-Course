@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "cypress": "^13.3.2"
+  },
+  "name": "qa-automation-course",
+  "description": "QA automation course",
+  "version": "1.0.0",
+  "main": "lesson_4_js_basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksandr-vysotskyi/QA-Automation-Course.git"
+  },
+  "author": "Oleksandr. V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksandr-vysotskyi/QA-Automation-Course/issues"
+  },
+  "homepage": "https://github.com/oleksandr-vysotskyi/QA-Automation-Course#readme"
+}
