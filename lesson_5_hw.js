@@ -8,7 +8,7 @@
 function map(fn,arr){
   let newArr = [];
   for(let i = 0; i < arr.length; i++){
-      newArr.push(square(arr[i]));
+      newArr.push(fn(arr[i]));
   }
   return newArr;
 }
