@@ -60,7 +60,7 @@ console.log(countVowels("Hello world")); // виводить 3
     4. Написати функцію, яка видаляє всі спеціальні символи зі строки (залишає лише числа, букви і пробіли в будь-якому регістрі)
 */
 function clearStr(str) {
-  return str.replace(/[%$#:;*%]/g,'');
+  return str.replace(/[^a-zA-Z ]/g,'');
 }
 
 console.log(clearStr("My var: 22 ")); // виведе "My var 22"
