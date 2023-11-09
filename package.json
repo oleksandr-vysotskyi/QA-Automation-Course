@@ -2,6 +2,7 @@
   "devDependencies": {
     "cypress": "^13.3.2"
   },
+  "type": "module",
   "name": "qa-automation-course",
   "description": "QA automation course",
   "version": "1.0.0",
