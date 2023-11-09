@@ -21,7 +21,7 @@ function removeDuplicatesAndSort(arr) {
     uniqueSet = new Set(arr);
     uniqueArr = Array.from(uniqueSet);
     uniqueArr.sort((a, b) => a - b);
-    return uniqueArr.join(", "); 
+    return uniqueArr
 }
 
 console.log(removeDuplicatesAndSort(initialArray)); // виводить [ 1, 4, 5, 6, 7, 34, 66, 1000 ]
