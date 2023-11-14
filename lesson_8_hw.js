@@ -9,7 +9,6 @@
   import { Employee } from "./modules/employee.js";
   import sortBySalary from "./modules/helpers/sorter.js";  
 
-
 const dev = new Dev(1, 2000);
 const pm = new PM(2, 2500);
 const dev2 = new Dev(3, 2000);
@@ -28,28 +27,20 @@ console.log(Employee.compareSalary(dev, dev2)); // виведе salaries are equ
    Object.defineProperty(newDev, "id", {
      value: 1,
      writable: false,
+     configurable: false,
      enumerable: true,
    });
    
-   Object.freeze(newDev);
-
-
 newDev.id = 15; // видасть помилку TypeError: Cannot assign to read only property 'id' of object '#<Dev>'
 delete newDev.id; // видасть помилку TypeError: Cannot delete property 'id' of #<Dev>
 for (let key in newDev) {
   console.log(newDev[key]); // виведе почергово 1 та 3000
 }
 
-
-
-
-
-
 /*3. На основі ієрархії, побудованоі вище, додати до класу Dev статичний метод returnArrayOfDevs, який буде приймати невизначену кількість
 об'єктів, перевіряти що вони є об'єктами класу Dev та якщо так - додавати їх у масив та повертати цей масив.
 Створити модуль у папці helpers з дефолтним експортом функції sortBySalary (імпорт вже додано вище), яка буде сортувати об'єкти по 
 зростанню зарплати, але якщо зп однакова - то по зростанню id. Приклад виконання нижче.*/
-
 
 const user1 = new Dev(1, 2000);
 const user2 = new Dev(2, 1500);
