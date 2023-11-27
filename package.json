@@ -7,6 +7,7 @@
   "description": "QA automation course",
   "version": "1.0.0",
   "main": "lesson_4_js_basics.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/oleksandr-vysotskyi/QA-Automation-Course/issues"
   },
-  "homepage": "https://github.com/oleksandr-vysotskyi/QA-Automation-Course#readme"
+  "homepage": "https://github.com/oleksandr-vysotskyi/QA-Automation-Course#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
